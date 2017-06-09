@@ -1,0 +1,275 @@
+ body {
+     background-image: url("../img/bg.jpg");
+ }
+ 
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 22px;
+
+    /* Logo */
+    .navbar-brand {
+        padding: 29px 0;
+        font-size: 48px;
+        color: $primery-color;
+
+        span {
+            color: $second-primary-color;
+        }
+    }
+
+    /* Menu */
+    .navbar-right {
+        margin-right: -30px;
+    }
+
+    .nav > li > a {
+        padding-left: 13px;
+    }
+
+    .nav li:last-child a {
+        padding-right: 0;
+    }
+}
+
+.navbar-default {
+    .navbar-brand:hover, 
+    .navbar-brand:focus {
+        color: $primery-color;
+    }
+}
+
+/* Slider */
+#myCarousel {
+    .carousel-control {
+        background-image: none;
+        margin-top: -50px;
+    }
+
+    .box {
+        width: 412px;
+        height: 124px;
+        background-color: rgba($primery-color, .6);
+        margin: 0 0 -20px -150px;
+        padding: 15px;
+        font-size: 12px;
+
+        @media (max-width: $screen-md) {
+            margin-left: -130px;
+        }
+
+        @media (max-width: $screen-sm) {
+            margin-left: -70px;
+        }
+
+        @media (max-width: 660px) {
+            display: none;
+        }
+        .text-uppercase {
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 24px;
+        }
+    }
+}
+
+.thumbnails {
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: 16px;
+    }
+
+    .col-sm-2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .thumbnail {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .thumbnail > img, .thumbnail a > img {
+        cursor: pointer;
+    }
+}
+
+/* Features */
+.features {
+    .text-uppercase {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 22px;
+        color: $primery-color;
+        padding: 15px 0;
+    }
+
+    .glyphicon {
+        font-size: 48px;
+        color: #e8603c;
+        float: left;
+        padding: 5px 20px 0 0;
+    }
+
+    .thumbnail {
+        border: none;
+    }
+
+    .btn {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        background-color: $primery-color;
+        color: #f1f1f1;
+        border-radius: 0;
+        transition: .2s;
+        margin: 5px 0;
+    }
+
+    .btn:hover, .btn:focus {
+        border: 1px solid $primery-color;
+        background-color: #fff;
+        color: $primery-color;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Recent works */
+.works {
+    .separator {
+        background: url("../img/separator.jpg") repeat-x;
+        height: 18px;
+        width: 100%;
+        display: inline-block;
+        margin-top: 21px;
+    } 
+
+    .col-sm-10 {
+        padding: 0;
+    }
+
+    .text-uppercase {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 22px;
+        color: $primery-color;
+        padding: 15px 0;   
+
+        @media (max-width: $screen-md) {
+            font-size: 20px;    
+        }     
+    }
+
+    .thumbnail {
+        padding: 0;
+        border: 0;
+    }
+
+    .info {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+
+        p {
+            margin: 0;
+        }
+
+        .title, .date {
+            font-family: 'Fjalla One', sans-serif;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .title {
+            color: #b9b9b9;
+            font-size: 20px;
+        }
+
+        .date {
+            color: $primery-color;
+            font-size: 12px;
+        }
+    }    
+}
+
+ /* Add a gray background color and some padding to the footer */
+footer {
+    background-color: $primery-color;
+    margin-top: 30px;
+    color: #fff;
+
+    .row {
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+
+    h3 {
+        font-family: 'Fjalla One', sans-serif;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    p, a {
+        font-size: 12px;
+    }
+
+    a, a:hover, a:visited, a:active  {
+        color: $second-primary-color;
+    }
+
+    .twitter {
+        margin: 0 0 10px;
+        p {
+            margin: 0 0 5px;
+        }
+    }
+
+    .contacts {
+        a, a:hover, a:visited, a:active  {
+            color: #fff;
+         }
+
+        .list-inline {
+            margin-top: 20px;
+
+            a, a:hover, a:visited, a:active  {
+                color: transparent;
+                background-color: transparent;
+                padding: 0;
+            }
+
+            li {
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                background: url("../img/socbtns.png") no-repeat;
+            }       
+
+            .fb {
+                background-position: 0 0;
+            }
+
+            .twitter {
+                background-position: -35px 0;
+            }
+
+            .mail {
+                background-position: -70px 0;
+            }
+
+            .rss {
+                background-position: -105px 0;
+            }
+
+            .v {
+                background-position: -140px 0;
+            }
+        }
+    }
+}
