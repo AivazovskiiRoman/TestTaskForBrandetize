@@ -18,13 +18,15 @@ Technologies:
 - http://koala-app.com Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficiently.
 
 Used in process development:
-npm i -g bower
-bower i bootstrap-sass --save
-npm i -g live-server
-bower i fontawesome --save
+
+```sh
+$ npm i -g bower
+$ bower i bootstrap-sass --save
+$ npm i -g live-server
+$ bower i fontawesome --save
+```
 
 Start server:
-live-server --port=8000
-
-
-
+```sh
+$ live-server --port=8000
+```
